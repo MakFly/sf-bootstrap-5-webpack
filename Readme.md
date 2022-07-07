@@ -1,5 +1,15 @@
 ```php
-# Installation Bootstrap au sein de symfony
+# Installation du projet 
+git clone git@github.com:MakFly/sf-bootstrap-5-webpack.git
+make server
+make vendor
+make npm
+
+# Et lets go vous amusez :)
+```
+
+```php
+# Installation Bootstrap au sein de symfony depuis Zéro
 - CF => 'https://yoandev.co/bootstrap-5-avec-symfony-5-et-webpack-encore/'
 
 # créer le projet à la race du dépot (important car la config docker est basé sur un dossier qui s'appelle symfony) 

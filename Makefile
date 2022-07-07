@@ -1,5 +1,5 @@
 # Créer une Makefile pour l'installation du projet de test JWT
-.PHONY: install up migrations fixtures stop
+.PHONY: install up migrations fixtures stop build
 
 export ROOT_DIR=${PWD}
 
@@ -12,6 +12,9 @@ stop: stop ## stop les docker
 ## build
 build: build
 	cd ${ROOT_DIR}/symfony && npm run build
+
+npm: build
+	cd ${ROOT_DIR}/symfony && npm install
 
 ## Install application
 vendor: install
