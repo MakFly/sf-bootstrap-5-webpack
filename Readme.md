@@ -1,5 +1,6 @@
-## Installation Bootstrap au sein de symfony
-# CF => https://yoandev.co/bootstrap-5-avec-symfony-5-et-webpack-encore/
+```php
+# Installation Bootstrap au sein de symfony
+- CF => 'https://yoandev.co/bootstrap-5-avec-symfony-5-et-webpack-encore/'
 
 # créer le projet à la race du dépot (important car la config docker est basé sur un dossier qui s'appelle symfony) 
 symfony new symfony --webapp
@@ -27,7 +28,7 @@ module.exports = {
     }
 }
 
-npm run build => pour vérifier que tout fonctionne
+npm run build => #Pour vérifier que tout fonctionne
 npm install bootstrap
 
 # Ajouter dans le /assets/app.js cette variable : 
@@ -37,6 +38,7 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
-npm run build => Pour vérifier que tout compile bien
+npm run build => #Pour vérifier que tout compile bien
 
-Pour chaque modification custom / ajout de scss lancer la commande : npm run build
+#Pour chaque modification custom / ajout de scss lancer la commande : npm run build
+```
